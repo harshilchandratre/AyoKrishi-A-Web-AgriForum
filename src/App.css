@@ -1,4 +1,19 @@
-#root {
+html{
+  height: 100%;
+}
+
+body{
+  height: 100%;
+  /* margin: 25px; */
+  padding: 0;
+  /* background-color: rgb(227, 255, 233); */
+  background: rgb(222,255,233);
+  background: linear-gradient(90deg, rgba(222,255,233,1) 35%, rgba(228,255,243,1) 100%); 
+}
+
+
+
+/* #root {
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
@@ -39,4 +54,4 @@
 
 .read-the-docs {
   color: #888;
-}
+} */
