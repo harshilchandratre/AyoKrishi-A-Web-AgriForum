@@ -3,9 +3,9 @@ import './Home.css'
 
 const Home = () => {
 
-  function scrollToTop(){
+  function scrollToTop() {
     window.scrollTo(0, 0);
-}
+  }
 
   // `````````````````````````````````````script for slider starts...
 
@@ -77,35 +77,23 @@ const Home = () => {
 
         <section className='top-insights'>
 
-          
 
-          <div className="slider">
 
-            {/* <div className="left-sidebar">
+
+          {/* <div className="left-sidebar">
               <div className="sidebar">
-                <h2>My Sidebar</h2>
-                <ul>
-                  <li><a to="#home">Home</a></li>
-                  <li><a to="#about">About</a></li>
-                  <li><a to="#services">Services</a></li>
-                  <li><a to="#contact">Contact</a></li>
-                </ul>
+              <h2>My Sidebar</h2>
+              <ul>
+              <li><a to="#home">Home</a></li>
+              <li><a to="#about">About</a></li>
+              <li><a to="#services">Services</a></li>
+              <li><a to="#contact">Contact</a></li>
+              </ul>
               </div>
             </div> */}
 
 
-            <div className="slide">
-              <img src="https://source.unsplash.com/997x501/?cultivation" alt="image1" className="slide-image" width="500" height="100" />
-              <img src="https://source.unsplash.com/997x501/?agriculture" alt="image2" className="slide-image" width="500" height="100" />
-              <img src="https://source.unsplash.com/997x501/?weather" alt="image3" className="slide-image" width="500" height="100" />
-              <img src="https://source.unsplash.com/997x501/?irrigation" alt="image4" className="slide-image" width="500" height="100" />
-              <img src="https://source.unsplash.com/997x501/?farm" alt="image5" className="slide-image" width="500" height="100" />
-            </div>
-            {/* <div className="navigation">
-              <button onClick={prev()}> Left </button>
-              <button onClick={next()}> Right </button>
-            </div> */}
-          </div>
+          
 
           <div className="headlines">
 
@@ -126,25 +114,25 @@ const Home = () => {
         <section className='mid-insights'>
           <div className="para-box">
             <div className="para1">
-                {/* <h2>Heading1</h2> */}
+              {/* <h2>Heading1</h2> */}
               <img className='para-img' src="https://source.unsplash.com/400x300/?farmer" alt="image1" width="400" height="300" />
               <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. A sit adipisci eaque, temporibus ab, quas iure nesciunt repellat, dolorum illo in vero aut perferendis dolore? Voluptatum, in, esse labore impedit facilis quae blanditiis repellat ut exercitationem eveniet at optio ipsam quo quibusdam voluptatibus nam reprehenderit nihil dolor amet! Sequi dolorum facere maiores molestias provident exercitationem, quae veritatis nulla, magnam aliquid, eos ipsam hic perferendis fugit consequuntur itaque unde! Dolore ipsum placeat nihil molestiae corporis ut possimus, sit hic quos, nesciunt quisquam ipsa. Quas maxime fuga maiores deserunt rem quia, odit distinctio, velit nesciunt modi cum eos veritatis laboriosam, dolores sunt et dolore eveniet commodi reiciendis vitae at. Accusamus voluptates excepturi rem omnis sed voluptatem animi? 
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. A sit adipisci eaque, temporibus ab, quas iure nesciunt repellat, dolorum illo in vero aut perferendis dolore? Voluptatum, in, esse labore impedit facilis quae blanditiis repellat ut exercitationem eveniet at optio ipsam quo quibusdam voluptatibus nam reprehenderit nihil dolor amet! Sequi dolorum facere maiores molestias provident exercitationem, quae veritatis nulla, magnam aliquid, eos ipsam hic perferendis fugit consequuntur itaque unde! Dolore ipsum placeat nihil molestiae corporis ut possimus, sit hic quos, nesciunt quisquam ipsa. Quas maxime fuga maiores deserunt rem quia, odit distinctio, velit nesciunt modi cum eos veritatis laboriosam, dolores sunt et dolore eveniet commodi reiciendis vitae at. Accusamus voluptates excepturi rem omnis sed voluptatem animi?
               </p>
-              
+
             </div>
             <div className="para1">
-                {/* <h2>Heading2</h2> */}
+              {/* <h2>Heading2</h2> */}
               <img className='para-img' src="https://source.unsplash.com/400x300/?food" alt="image1" width="400" height="300" />
               <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. A sit adipisci eaque, temporibus ab, quas iure nesciunt repellat, dolorum illo in vero aut perferendis dolore? Voluptatum, in, esse labore impedit facilis quae blanditiis repellat ut exercitationem eveniet at optio ipsam quo quibusdam voluptatibus nam reprehenderit nihil dolor amet! Sequi dolorum facere maiores molestias provident exercitationem, quae veritatis nulla, magnam aliquid, eos ipsam hic perferendis fugit consequuntur itaque unde! Dolore ipsum placeat nihil molestiae corporis ut possimus, sit hic quos, nesciunt quisquam ipsa. Quas maxime fuga maiores deserunt rem quia, odit distinctio, velit nesciunt modi cum eos veritatis laboriosam, dolores sunt et dolore eveniet commodi reiciendis vitae at. Accusamus voluptates excepturi rem omnis sed voluptatem animi? 
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. A sit adipisci eaque, temporibus ab, quas iure nesciunt repellat, dolorum illo in vero aut perferendis dolore? Voluptatum, in, esse labore impedit facilis quae blanditiis repellat ut exercitationem eveniet at optio ipsam quo quibusdam voluptatibus nam reprehenderit nihil dolor amet! Sequi dolorum facere maiores molestias provident exercitationem, quae veritatis nulla, magnam aliquid, eos ipsam hic perferendis fugit consequuntur itaque unde! Dolore ipsum placeat nihil molestiae corporis ut possimus, sit hic quos, nesciunt quisquam ipsa. Quas maxime fuga maiores deserunt rem quia, odit distinctio, velit nesciunt modi cum eos veritatis laboriosam, dolores sunt et dolore eveniet commodi reiciendis vitae at. Accusamus voluptates excepturi rem omnis sed voluptatem animi?
               </p>
             </div>
             <div className="para1">
-                {/* <h2>Heading3</h2> */}
+              {/* <h2>Heading3</h2> */}
               <img className='para-img' src="https://source.unsplash.com/400x300/?weather" alt="image1" width="400" height="300" />
               <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. A sit adipisci eaque, temporibus ab, quas iure nesciunt repellat, dolorum illo in vero aut perferendis dolore? Voluptatum, in, esse labore impedit facilis quae blanditiis repellat ut exercitationem eveniet at optio ipsam quo quibusdam voluptatibus nam reprehenderit nihil dolor amet! Sequi dolorum facere maiores molestias provident exercitationem, quae veritatis nulla, magnam aliquid, eos ipsam hic perferendis fugit consequuntur itaque unde! Dolore ipsum placeat nihil molestiae corporis ut possimus, sit hic quos, nesciunt quisquam ipsa. Quas maxime fuga maiores deserunt rem quia, odit distinctio, velit nesciunt modi cum eos veritatis laboriosam, dolores sunt et dolore eveniet commodi reiciendis vitae at. Accusamus voluptates excepturi rem omnis sed voluptatem animi? 
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. A sit adipisci eaque, temporibus ab, quas iure nesciunt repellat, dolorum illo in vero aut perferendis dolore? Voluptatum, in, esse labore impedit facilis quae blanditiis repellat ut exercitationem eveniet at optio ipsam quo quibusdam voluptatibus nam reprehenderit nihil dolor amet! Sequi dolorum facere maiores molestias provident exercitationem, quae veritatis nulla, magnam aliquid, eos ipsam hic perferendis fugit consequuntur itaque unde! Dolore ipsum placeat nihil molestiae corporis ut possimus, sit hic quos, nesciunt quisquam ipsa. Quas maxime fuga maiores deserunt rem quia, odit distinctio, velit nesciunt modi cum eos veritatis laboriosam, dolores sunt et dolore eveniet commodi reiciendis vitae at. Accusamus voluptates excepturi rem omnis sed voluptatem animi?
               </p>
             </div>
           </div>
