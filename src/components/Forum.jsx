@@ -10,7 +10,11 @@ const Forum = () => {
 
   return (
     <>
-      
+      <div className='forum-container'>
+        <div className="chat-container">
+          
+        </div>
+      </div>
     </>
   )
 }
