@@ -1,20 +1,17 @@
 import React from 'react'
 import './Forum.css'
+import Chat from './chat-module/Chat'
 
 
 
 
 const Forum = () => {
 
-  
+
 
   return (
     <>
-      <div className='forum-container'>
-        <div className="chat-container">
-          
-        </div>
-      </div>
+          <Chat />
     </>
   )
 }

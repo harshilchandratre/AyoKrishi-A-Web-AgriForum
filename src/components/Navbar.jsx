@@ -49,6 +49,7 @@ const Navbar = () => {
           <img className='ayogo-main' src="/ayogo.png" alt="ayokrishi" />
           AyoKrishi
         </div>
+        
         <ul className="navbar-list">
           <li className="navbar-item"><NavLink to='/' className="navbar-link home-active">Home</NavLink></li>
           <li className="navbar-item"><NavLink to='/forum' className="navbar-link">Forum</NavLink></li>
