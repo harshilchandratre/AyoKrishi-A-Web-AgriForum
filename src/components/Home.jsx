@@ -1,7 +1,7 @@
 import React from 'react'
 import './Home.css'
-// import Slider from './Slider';
 import Slider from './Slider';
+import News from './News';
 
 const Home = () => {
 
@@ -11,9 +11,9 @@ const Home = () => {
 
   // `````````````````````````````````````script for slider starts...
 
-  
-  
-  
+
+
+
 
   // ````````````````````````````````````````script for slider ends...
 
@@ -28,63 +28,60 @@ const Home = () => {
 
 
 
-          {/* <div className="left-sidebar">
-              <div className="sidebar">
-              <h2>My Sidebar</h2>
-              <ul>
-              <li><a to="#home">Home</a></li>
-              <li><a to="#about">About</a></li>
-              <li><a to="#services">Services</a></li>
-              <li><a to="#contact">Contact</a></li>
-              </ul>
-              </div>
-            </div> */}
+
 
           <Slider />
 
 
-          {/* <div className="headlines">
 
-            <marquee behavior="scroll" direction="left">
-              <span>This is a news headlines.</span>
-              <span>High court sanctioned delhi government...</span>
-              <span>India touches lunar surface again...</span>
-            </marquee>
-            <marquee behavior="scroll" direction="left">
-              <span>This is a news headlines.</span>
-              <span>High court sanctioned delhi government...</span>
-              <span>India touches lunar surface again...</span>
-            </marquee>
-          </div> */}
 
         </section>
 
         <section className='mid-insights'>
+          <h1 className='mid-title'>🍀Learn </h1>
           <div className="para-box">
             <div className="para1">
               {/* <h2>Heading1</h2> */}
-              <img className='para-img' src="https://source.unsplash.com/400x300/?farmer" alt="image1" width="400" height="300" />
+              <img className='para-img' src="https://source.unsplash.com/400x300/?harvesting" alt="image1" width="400" height="300" />
               <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. A sit adipisci eaque, temporibus ab, quas iure nesciunt repellat, dolorum illo in vero aut perferendis dolore? Voluptatum, in, esse labore impedit facilis quae blanditiis repellat ut exercitationem eveniet at optio ipsam quo quibusdam voluptatibus nam reprehenderit nihil dolor amet! Sequi dolorum facere maiores molestias provident exercitationem, quae veritatis nulla, magnam aliquid, eos ipsam hic perferendis fugit consequuntur itaque unde! Dolore ipsum placeat nihil molestiae corporis ut possimus, sit hic quos, nesciunt quisquam ipsa. Quas maxime fuga maiores deserunt rem quia, odit distinctio, velit nesciunt modi cum eos veritatis laboriosam, dolores sunt et dolore eveniet commodi reiciendis vitae at. Accusamus voluptates excepturi rem omnis sed voluptatem animi?
+                <h2>Low-cost farming Technologies</h2>
+                <b>Why it's important:</b> Low-cost or DIY technologies like rainwater harvesting, simple irrigation systems, and basic soil testing methods can significantly improve farming outcomes without requiring extensive technical knowledge.
+                <b>What to learn:</b> Building and maintaining low-cost irrigation systems, rainwater harvesting techniques, and basic soil testing procedures using affordable and locally available materials.
               </p>
 
             </div>
             <div className="para1">
               {/* <h2>Heading2</h2> */}
-              <img className='para-img' src="https://source.unsplash.com/400x300/?food" alt="image1" width="400" height="300" />
+              <img className='para-img' src="https://source.unsplash.com/400x300/?smartphone" alt="image1" width="400" height="300" />
               <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. A sit adipisci eaque, temporibus ab, quas iure nesciunt repellat, dolorum illo in vero aut perferendis dolore? Voluptatum, in, esse labore impedit facilis quae blanditiis repellat ut exercitationem eveniet at optio ipsam quo quibusdam voluptatibus nam reprehenderit nihil dolor amet! Sequi dolorum facere maiores molestias provident exercitationem, quae veritatis nulla, magnam aliquid, eos ipsam hic perferendis fugit consequuntur itaque unde! Dolore ipsum placeat nihil molestiae corporis ut possimus, sit hic quos, nesciunt quisquam ipsa. Quas maxime fuga maiores deserunt rem quia, odit distinctio, velit nesciunt modi cum eos veritatis laboriosam, dolores sunt et dolore eveniet commodi reiciendis vitae at. Accusamus voluptates excepturi rem omnis sed voluptatem animi?
+                <h2>Smartphone usage for Agriculture</h2>
+                <b>Why it's important:</b> Many farmers in developing countries own smartphones, making it a valuable tool for accessing information, market prices, weather forecasts, and agricultural apps.
+                <b>What to learn:</b> Basic smartphone operations, using agricultural apps for market information, weather updates, and pest identification, and communication tools like WhatsApp for farmer groups.
               </p>
             </div>
             <div className="para1">
               {/* <h2>Heading3</h2> */}
-              <img className='para-img' src="https://source.unsplash.com/400x300/?weather" alt="image1" width="400" height="300" />
+              <img className='para-img' src="https://source.unsplash.com/400x300/?internet" alt="image1" width="400" height="300" />
               <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. A sit adipisci eaque, temporibus ab, quas iure nesciunt repellat, dolorum illo in vero aut perferendis dolore? Voluptatum, in, esse labore impedit facilis quae blanditiis repellat ut exercitationem eveniet at optio ipsam quo quibusdam voluptatibus nam reprehenderit nihil dolor amet! Sequi dolorum facere maiores molestias provident exercitationem, quae veritatis nulla, magnam aliquid, eos ipsam hic perferendis fugit consequuntur itaque unde! Dolore ipsum placeat nihil molestiae corporis ut possimus, sit hic quos, nesciunt quisquam ipsa. Quas maxime fuga maiores deserunt rem quia, odit distinctio, velit nesciunt modi cum eos veritatis laboriosam, dolores sunt et dolore eveniet commodi reiciendis vitae at. Accusamus voluptates excepturi rem omnis sed voluptatem animi?
+                <h2>How to access Ayokrishi?</h2>
+                <b>Why it's important:</b> Familiarity with agricultural mobile apps specific to the region or crop types can provide farmers with tools for market information, crop management, and accessing educational resources.
+                <b>What to learn:</b> How to download, install, and navigate agricultural mobile apps like "AyoKrishi," understanding the app's features for market prices, crop advice, and record-keeping, and troubleshooting common issues.
               </p>
             </div>
           </div>
         </section>
+
+
+
+        <section className='news-insights'>
+          <h2 className="mid-title">🍁News</h2>
+          <News />
+        </section>
+
+
+
+
+
 
       </div>
     </>

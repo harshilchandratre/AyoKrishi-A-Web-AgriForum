@@ -14,7 +14,7 @@ const appendMessage = (message, className) => {
 };
 
 const playNotificationSound = () => {
-  const audio = new Audio('/notification.mp3');
+  const audio = new Audio('./notification.mp3');
   audio.play();
 };
 

@@ -3,8 +3,6 @@ const app = express();
 const server = require('http').createServer(app);
 const io = require('socket.io')(server, { cors: { origin: 'http://localhost:5173' } });
 
-
-
 const users = {};
 
 io.on('connection', (socket) => {
@@ -28,7 +26,11 @@ io.on('connection', (socket) => {
   });
 });
 
+
+
 const PORT = 8004;
 server.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
 });
+
+

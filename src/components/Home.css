@@ -1,222 +1,326 @@
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css');
 
 .container {
-    /* width: 100%;
-    
-    height: 100%; */
+  width: 100%;
 
-    display: flex;
-    flex-direction: column;
-    border-radius: 4px;
-    /* margin: 20px; */
-    background-color: white;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    overflow: auto;
+  height: 100%;
 
+  display: flex;
+  flex-direction: column;
+      background: rgb(148, 255, 188);
+  background: linear-gradient(90deg, rgba(148, 255, 188, 1) 35%, rgba(5, 224, 124, 1) 100%);
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  overflow: auto;
 
 
-    /* background-color: rgb(251, 255, 252); */
-    /* padding: 10px; */
-    /* padding: 20px; */
+
+  /* background-color: rgb(251, 255, 252); */
+  /* padding: 10px; */
+  /* padding: 20px; */
+
+  overflow-x: hidden;
 }
 
 .top-insights {
-    margin: 10px 0 10px 0;
-    padding: 0;
-    display: grid;
-    place-content: center;
-    flex: 1;
+  /* margin: 8px 8px 8px 8px; */
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  /* min-height: 75vh; */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
 }
 
 .mid-insights {
-    margin: 0;
-    padding: 0;
-    height: 100%;
-    /* float: 1; */
+    /* max-width: calc((var(--max-page-width)/2)- (var(--padding)*2));  */
+  margin: 8px 8px 8px 8px;
+  padding: 0;
+  /* height: 100vh; */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  
+
+  /* float: 1; */
+}
+
+.mid-title{
+  margin: 10px;
+  font-size: xx-large;
+  text-align: center;
+  margin-bottom: 30px;
 }
 
 .headlines {
-    width: 100%;
-    height: max-content;
-    /* padding: 10px; */
-    margin: 40px 0 40px 0;
-    /* border: 1px solid #333; */
-
-    /* margin: 10px 0 10px 0; */
-    /* display: grid;
-    place-content: center; */
-    /* border: 1px solid rgb(144, 255, 192); */
-    /* border: 1px solid yellow; */
-
-}
-.slider {
-  display: grid;
-  place-content: center;
-  width: 80rem;
-  height: 25rem;
-  /* You can adjust margin and padding if needed */
-  margin: 20px 0; /* Adjust margin as needed */
-  padding: 0;
-  /* Add a border or background if you want */
-  /* border: 1px solid black; */
-  /* background-color: aqua; */
-}
-
-.slide {
-  display: flex;
-  overflow: hidden;
-  transition: transform 0.5s ease-in-out;
   width: 100%;
-  border-radius: 14px;
+  height: max-content;
+  /* padding: 10px; */
+  margin: 40px 0 40px 0;
+  /* border: 1px solid #333; */
+
+  /* margin: 10px 0 10px 0; */
+  /* display: grid;
+    place-content: center; */
+  /* border: 1px solid rgb(144, 255, 192); */
+  /* border: 1px solid yellow; */
+
 }
 
-.slide-image {
-  flex: 0 0 100%;
-  max-width: 100%;
-  height: auto;
-  transition: opacity 0.5s ease-in-out;
-  width: 80rem; /* Adjust width as needed */
-  height: 25rem; /* Height auto maintains the aspect ratio */
-  object-fit: cover;
-  border-radius: 14px;
-}
-
-
-
-/* Add styles for progress dots */
-.progress-dots {
-    display: flex;
-    justify-content: center;
-    margin-top: 10px;
-}
-
-.dot {
-    width: 10px;
-    height: 10px;
-    background-color: rgba(0, 0, 0, 0.5);
-    border-radius: 50%;
-    margin: 0 5px;
-}
-
-/* Active dot style */
-/* .active {
-    background-color: #000;
-  } */
-
-
-/* .navigation{
-    position: absolute;
-    bottom: 10px;
-    left: 50%;
-    transform: translate(-50%);
-}
-
-.navigation button{
-    padding: 8px;
-    margin: 0 4px;
-    border: none;
-    border-radius: 4px;
-    background-color: #333;
-    color: #fff;
-    cursor: pointer;
-} */
-
-.sidebar {
-    height: max-content;
-    width: 250px;
-    background: rgb(238, 174, 202);
-    background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
-}
-
-.sidebar h2 {
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-.sidebar ul {
-    list-style: none;
-    padding: 0;
-}
-
-.sidebar li {
-    margin-bottom: 10px;
-}
-
-.sidebar a {
-    display: block;
-    padding: 10px;
-    text-decoration: none;
-    color: #333;
-}
-
-.sidebar a:hover {
-    background-color: #ddd;
+.news-insights{
+  margin: 0px 8px 0px 8px;
+  padding: 0;
+  /* height: 100vh; */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
 
 
 
 .para-box {
-    /* margin: 60px 0 30px 0; */
-    margin: 0 0 70px 0;
-    padding: 0 0 10px 0;
-    background-color: beige;
-    width: 100%;
-    height: 100%;
-    /* border: 1px solid black; */
-    display: grid;
-    place-content: center;
+  /* margin: 60px 0 30px 0; */
+  margin: 0 0 8px 0;
+  padding: 0 0 10px 0;
+  background-color: beige;
+  width: 100%;
+  height: 100%;
+  /* border: 1px solid black; */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 
 }
 
 p {
-    font-size: 20px;
-    line-height: 1.6;
-    /* color: #333; */
-    /* text-align: justify; */
-    /* margin: 0 50px 0 0; */
-    /* width: 25rem; */
-    height: max-content;
-    margin: 25px;
+  font-size: 20px;
+  line-height: 1.6;
+  /* color: #333; */
+  /* text-align: justify; */
+  /* margin: 0 50px 0 0; */
+  /* width: 25rem; */
+  height: max-content;
+  margin: 25px;
 }
 
 .para-img {
-    border-radius: 4px;
-    margin: 25px;
-    float: left;
+  border-radius: 4px;
+  margin: 25px;
+  float: left;
+  object-fit: cover;
 }
 
 .para1 {
 
 
 
-    height: fit-content;
-    width: 70rem;
+  height: fit-content;
+  width: 70rem;
 
-    margin: 10px 200px 10px 200px;
+  margin: 10px 200px 10px 200px;
 
-    padding: 20px;
-    background-color: white;
-    border-radius: 14px;
+  padding: 20px;
+  background-color: white;
+  /* border: 2px solid black; */
+  border-radius: 2px;
 
-    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
 
 
 }
 
 @media (max-width: 1156px) {
 
-    .para1,
-    p {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        margin: 20px;
-    }
+  .para1,
+  p {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+  }
 
-    .para-box {
-        margin: 20px;
-    }
+  .para-box {
+    margin: 20px;
+  }
 
 
 }
+
+
+/* article page css */
+.article-container {
+  width: 100%;
+  min-height: 100vh;
+}
+
+/* article page css */
+
+/* about page css */
+.about-container {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.about-card {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 40px;
+  background-color: #f9f9f9;
+  border: 2px solid black;
+  border-radius: 4px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.about-heading {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.about-description {
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+  color: #666;
+}
+
+.about-link {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.about-link:hover {
+  text-decoration: underline;
+}
+
+/* about page css */
+
+
+/* to-top css */
+#back-to-top {
+  bottom: 5px;
+  right: 20px;
+  position: fixed;
+  display: block;
+  z-index: 1;
+}
+
+/* to-top css */
+
+
+/* Slider css */
+.slider {
+  position: relative;
+  width: 100%;
+  /* Ensure relative positioning for the container */
+  margin: 0;
+  padding: 0;
+  
+}
+
+.slider-image-container {
+  position: relative;
+  /* Relative positioning for the image container */
+  margin: 0;
+  padding: 0;
+  margin: 8px 8px 0px 8px;
+  
+  
+}
+
+.slider-image {
+  width: 100%;
+  height: 70vh;
+  object-fit: cover;
+  padding: 0;
+}
+
+
+.slider-text {
+  width: 100%;
+  height: 30vh;
+  /* Adjust the height as needed */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  /* flex-direction: column; */
+  position: absolute;
+  /* Absolute positioning to place text on top */
+  top: 50%;
+  /* Adjust the top position as needed */
+  left: 50%;
+  /* Adjust the left position as needed */
+  transform: translate(-50%, -50%);
+  /* Center the text both horizontally and vertically */
+  background-color: rgba(0, 0, 0, 0.5);
+  /* Add a semi-transparent background */
+  color: #fff;
+  /* Text color */
+  padding: 10px;
+  /* Adjust padding as needed */
+  text-align: center;
+  background: linear-gradient(to left, transparent, rgba(0, 0, 0, 0.176) 0%);
+
+ 
+
+  
+}
+
+
+
+.slider-logo{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: xx-large;
+
+}
+
+
+/* loading css */
+/* Loading.css */
+
+.loading {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #fff; /* Background color for the loading screen */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999; /* Ensure it appears above other content */
+}
+
+/* Add any animation styles for your logo or loading animation */
+/* .loading img {
+  animation: spin 2s linear infinite; 
+} */
+
+.loading img {
+  width: 20%;
+  animation: fade-in 1s ease-in;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* loading css */

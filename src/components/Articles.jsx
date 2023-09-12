@@ -1,8 +1,9 @@
 import React from 'react'
+import './Home.css'
 
 const Articles = () => {
   return (
-    <div>Articles</div>
+    <div className='article-container'>Articles</div>
   )
 }
 

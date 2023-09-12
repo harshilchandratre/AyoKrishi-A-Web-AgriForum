@@ -1,18 +1,12 @@
 import React from 'react'
-import './Forum.css'
-import Chat from './chat-module/Chat'
-
-
-
+import Chat from './Chat'
+// import './Forum.css'
 
 const Forum = () => {
-
-
-
-  return (
-    <>
-          <Chat />
-    </>
+return (
+    <div className="forum-container">
+      <Chat />
+    </div>
   )
 }
 

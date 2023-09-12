@@ -1,56 +1,55 @@
-import React, { useEffect, useState } from 'react';
-import './Home.css';
+import React, { useState, useEffect } from 'react';
+
+import image1 from '/slide_img1.jpg'; // Replace with the actual path to your image
+import image2 from '/slide_img2.jpg'; // Replace with the actual path to your image
+import image3 from '/slide_img3.jpg';
 
 const Slider = () => {
-  const [slideIndex, setSlideIndex] = useState(0);
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+
+  // Define an array of image URLs
+  const images = [image1, image2, image3];
+
+  // const images = [
+  //   'https://source.unsplash.com/1920x1080/?vegitables',
+  //   'https://source.unsplash.com/1920x1080/?weather',
+  //   'https://source.unsplash.com/1920x1080/?indian-farmer',
+  // ];
+
+  // Function to handle next image
+  const nextImage = () => {
+    setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
+  };
 
   useEffect(() => {
-    const interval = setInterval(() => {
-      setSlideIndex((prevSlide) => (prevSlide + 1) % 3); // Adjust the number based on the number of slides
-    }, 5000);
+    // Automatically scroll to the next image every 3 seconds
+    const interval = setInterval(nextImage, 3000);
 
-    return () => clearInterval(interval);
+    // Clear the interval when the component unmounts
+    return () => {
+      clearInterval(interval);
+    };
   }, []);
 
   return (
     <div className="slider">
-      <div className="slide">
+      <div className="slider-image-container">
         <img
-          src="/slide_img1.jpg"
-          alt="image1"
-          className={`slide-image ${slideIndex === 0 ? 'active' : ''}`}
+          src={images[currentImageIndex]}
+          alt={`Image ${currentImageIndex + 1}`}
+          className="slider-image"
         />
-        <img
-          src="/slide_img2.jpg"
-          alt="image2"
-          className={`slide-image ${slideIndex === 1 ? 'active' : ''}`}
-        />
-        <img
-          src="/slide_img3.jpg"
-          alt="image3"
-          className={`slide-image ${slideIndex === 2 ? 'active' : ''}`}
-        />
-      </div>
-
-      <div className="progress-dots">
-        {[0, 1, 2].map((index) => (
-          <div
-            key={index}
-            className={`dot ${slideIndex === index ? 'active' : ''}`}
-            onClick={() => setSlideIndex(index)}
-          ></div>
-        ))}
+        <div className="slider-text">
+        <div className="slider-logo">
+          <img className='ayogo-main' src="/ayogo.png" alt="ayokrishi" />
+          AyoKrishi
+        </div>
+          
+          <p>🙏Welcome to AyoKrishi Knowledge Portal🙏</p>
+        </div>
       </div>
     </div>
   );
 };
 
 export default Slider;
-
-
-
-{/* <img src="https://source.unsplash.com/1920x1080/?cultivation" alt="image1" className="slide-image" />
-        <img src="https://source.unsplash.com/1980x1080/?agriculture" alt="image2" className="slide-image" />
-        <img src="https://source.unsplash.com/1980x1080/?weather" alt="image3" className="slide-image" />
-        <img src="https://source.unsplash.com/1980x1080/?irrigation" alt="image4" className="slide-image" />
-        <img src="https://source.unsplash.com/1980x1080/?farm" alt="image5" className="slide-image" /> */}
