@@ -1,12 +1,12 @@
 /* eslint-disable no-undef */
 const express = require('express');
 const axios = require('axios');
-
+require('dotenv').config();
 
 const app = express();
-const port = 3002;
-const apiKey = 'b2b92dc8b904407f927d21fde2bf464b';
-const keyword = 'agriculture'
+const port = process.env.PORT || 3002;
+const apiKey = process.env.APIKEY || 'b2b92dc8b904407f927d21fde2bf464b';
+const keyword = process.env.KEYWORD || 'agriculture'
 
 // Enable CORS to allow cross-origin requests
 app.use((req, res, next) => {
