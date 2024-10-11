@@ -1,3 +1,4 @@
+// eslint-disable-next-line no-unused-vars
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import './Navbar.css';
@@ -58,7 +59,7 @@ const Navbar = () => {
                 {/* <li className="navbar-item"></li> */}
                 {/* <button className='btn_logout' onClick={() => logout({ returnTo: window.location.origin })}>Log Out</button> */}
                 <li className="navbar-item"><NavLink to='/' className="navbar-link home-active">Home</NavLink></li>
-                <li className="navbar-item"><a href='https://ayokrishi-connect-test-2.onrender.com' className="navbar-link" target='_blank'>Chat</a></li>
+                <li className="navbar-item"><a href='https://ayokrishi-connect-test.vercel.app/' className="navbar-link" target='_blank' rel="noreferrer">Chat</a></li>
                 {/* <li className="navbar-item"><NavLink to='/articles' className="navbar-link">Articles</NavLink></li> */}
                 <li className="navbar-item"><a href='#news-insights' className="navbar-link">News</a></li>
                 {/* <li className="navbar-item"><ScrollLink to="section1" smooth={true} duration={500}>News</ScrollLink></li> */}
