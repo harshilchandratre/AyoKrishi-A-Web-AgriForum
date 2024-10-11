@@ -28,10 +28,44 @@
   align-items: center;
 }
 
+.nav-profile-pic{
+
+  /* display: none; */
+  width: 40px;
+  height: auto;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.profile-align{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.userName {
+  color: #3e6020;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* font-size: large; */
+}
+
+.logout-container{
+  width: 100px;
+  margin-left: 10px;
+}
+
+
+
 .navbar-list {
   list-style-type: none;
   margin: 0;
   padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .navbar-item {
@@ -68,14 +102,10 @@
   }
 }
 
-.userName {
-  color: #3e6020;
-  /* font-size: large; */
-}
 
 .separator {
   display: inline-block;
-  width: 1px;
+  width: .5px;
   height: 24px;
   background-color: #3e6020;
   margin: 0 10px;
@@ -88,37 +118,42 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
+    flex-direction: row;
+    /* width: 20vw; */
     height: 50px;
   }
-
-  .ayogo-main {
-    width: 40px;
-    height: 40px;
-  }
-
-  .logo{
-    display: none;
-  }
-
-
-
   .navbar-list {
     display: flex;
-
+    align-items: center;
+    justify-content: center;
     position: relative;
     top: 10px;
-    /* Adjust this value as needed to position the menu */
     left: 0;
     width: 90%;
-    /* background-color: rgba(255, 255, 255, 0.5); */
     z-index: 1;
-    /* display: none; */
+    
   }
 
   .navbar-list.active {
     display: flex;
   }
+  
+  .ayogo-main {
+    display: none;
+    /* width: 40px;
+    height: auto; */
+  }
+
+  .ayokrishi-title{
+    display: none;
+  }
+
+
+  .userName{
+    display: none;
+  }
+
+
 
   .menu-button {
     display: block;

@@ -47,15 +47,10 @@ const Navbar = () => {
         <nav className="navbar">
           <div className="logo">
             <img className='ayogo-main' src="/ayogo.png" alt="ayokrishi" />
-            AyoKrishi
+            <label className="ayokrishi-title">AyoKrishi</label>
           </div>
 
           <ul className="navbar-list">
-
-
-
-
-
 
             {isAuthenticated ? (
               <>
@@ -63,12 +58,31 @@ const Navbar = () => {
                 {/* <li className="navbar-item"></li> */}
                 {/* <button className='btn_logout' onClick={() => logout({ returnTo: window.location.origin })}>Log Out</button> */}
                 <li className="navbar-item"><NavLink to='/' className="navbar-link home-active">Home</NavLink></li>
-                <li className="navbar-item"><NavLink to='/forum' className="navbar-link">Chat</NavLink></li>
+                <li className="navbar-item"><a href='https://ayokrishi-connect-test-2.onrender.com' className="navbar-link" target='_blank'>Chat</a></li>
                 {/* <li className="navbar-item"><NavLink to='/articles' className="navbar-link">Articles</NavLink></li> */}
+                <li className="navbar-item"><a href='#news-insights' className="navbar-link">News</a></li>
                 {/* <li className="navbar-item"><ScrollLink to="section1" smooth={true} duration={500}>News</ScrollLink></li> */}
                 <li className="navbar-item"><NavLink to='/about' className="navbar-link">About</NavLink></li>
-                <div className="separator"></div>
-                <li className="navbar-item"><label className="userName">Hello👋 {user.name} </label><NavLink className='navbar-link logout-border' onClick={() => logout({ returnTo: window.location.origin })}>Log Out</NavLink></li>
+
+                {/* <div className="separator"></div> */}
+
+                <li className="navbar-item">
+                
+                  <div className="profile-align">
+                    <label className="userName">
+                      <img className='nav-profile-pic' src={user.picture} alt="Profile" /> &nbsp; {user.name}
+                    </label>
+                    <div className='logout-container'>
+                      <NavLink className='navbar-link logout-border' onClick={() => logout({ returnTo: window.location.origin })}>
+                        Log Out 
+                      </NavLink>
+                      &nbsp;
+                    </div>
+
+                  </div>
+
+
+                </li>
 
               </>
             ) : (
@@ -76,8 +90,8 @@ const Navbar = () => {
               <>
 
                 <li className="navbar-item"><NavLink to='/' className="navbar-link home-active">Home</NavLink></li>
-                <li className="navbar-item"><NavLink className="navbar-link" onClick={() => loginWithRedirect()}>Chat</NavLink></li>
-                {/* <li className="navbar-item"><NavLink to='/articles' className="navbar-link">Articles</NavLink></li> */}
+                <li className="navbar-item"><NavLink to='#' className="navbar-link" onClick={() => loginWithRedirect()}>Chat</NavLink></li>
+                <li className="navbar-item"><a href='#news-insights' className="navbar-link">News</a></li>
                 {/* <li className="navbar-item"><ScrollLink to="section1" smooth={true} duration={500}>News</ScrollLink></li> */}
                 <li className="navbar-item"><NavLink to='/about' className="navbar-link">About</NavLink></li>
 

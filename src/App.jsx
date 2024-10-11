@@ -6,7 +6,7 @@ import Footer from './components/Footer';
 import Home from './components/Home';
 import About from './components/About';
 import Articles from './components/Articles';
-import Forum from './components/Forum';
+// import Forum from './components/Forum';
 // import Chat from './components/Chat';
 import ToTop from './components/ToTop';
 import Loading from './components/Loading';
@@ -35,7 +35,7 @@ function App() {
 
           <Routes>
             <Route exact path="/" activeClassName='active-link' element={<Home />} />
-            <Route path="/forum" activeClassName='active-link' element={<Forum />} />
+            {/* <Route path="/forum" activeClassName='active-link' element={<Forum />} /> */}
             <Route path="/articles" activeClassName='active-link' element={<Articles />} />
             <Route path="/about" activeClassName='active-link' element={<About />} />
           </Routes>

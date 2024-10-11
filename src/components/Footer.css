@@ -9,7 +9,7 @@
     background: rgb(70, 70, 70);
     background: linear-gradient(90deg, rgba(70, 70, 70, 1) 49%, rgba(54, 54, 54, 1) 100%);
     color: #fff;
-    padding: 12px;
+    padding: 20px;
 
     left: 0;
     bottom: 0;
@@ -86,6 +86,21 @@
     margin-left: 10px;
     margin-right: 10px;
     text-align: center;
+  }
+
+  textarea {
+    width: 300px;
+    padding: 0;
+    border: none;
+    border-radius: 65px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+    margin-left: 10px;
+    margin-right: 10px;
+    text-align: center;
+    &::placeholder{
+      font-family:Verdana, Geneva, Tahoma, sans-serif;
+    }
   }
   
   .contact-focus{

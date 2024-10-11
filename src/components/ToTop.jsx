@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react';
+import './Home.css'
 import $ from 'jquery';
 
 const ToTop = () => {
@@ -27,8 +28,8 @@ const ToTop = () => {
     }
 
     return (
-        <div id='back-to-top' onClick={topFunction}><img src="/scroll-to-top.png" alt="go-to-top" /></div>
-    );
+        <div id='back-to-top' onClick={topFunction}><img src="/top-leaf.png" alt="go-to-top" className='back-to-top-leaf'/></div>
+        );
 }
 
 export default ToTop;
